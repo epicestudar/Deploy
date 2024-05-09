@@ -12,6 +12,6 @@ from openjdk:17-jdk-slim
 
 EXPOSE 8080
 
-copy --from=build /target/loja.jar app.jar
+copy --from=build /target/Deploy.jar app.jar
 
 ENTRYPOINT [ "java", "-jar", "app.jar" ]
